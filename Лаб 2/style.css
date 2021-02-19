@@ -1,0 +1,64 @@
+.body {
+	background-image: url(images/bg.gif);
+	font-family: 'Caveat', cursive;
+	cursor:url(images/cursor.png), auto;
+}
+.content { 
+	background: #ffe9e9b8;
+	width: 80%; 
+	min-height:600px;
+	margin: auto;
+	padding: 25px 100px 0 100px; 
+	box-shadow: 0 0 10px red;
+}
+ul {
+	display: flex;
+	list-style: none; /*убираем маркеры списка*/
+	margin: 20px 8% 0; 
+	font-size:20px;
+}
+h1 {
+	font-size:50px;
+    text-align: center;
+	color:#460505;
+}
+h2 {
+	color: #a51228
+}
+.link {
+	text-decoration:none !important;
+	font-weight:bold;
+	color: #fff;
+	cursor:url(images/cursor_pointer.png), pointer;
+}
+.menu {
+	margin: 0 3px;
+	padding: 10px;
+	background:#460505;
+	color: #fff;
+	box-shadow: 0 0 10px red;
+	text-decoration: none
+}
+.menu :hover {
+	color:#ffdaec;
+}
+.img_box {
+    margin: 0 3px;
+	padding: 10px;
+    font-size:25px;
+}
+.img {
+	width: 400px;
+	height:400px;
+	box-shadow: 0 0 10px red;
+	cursor:url(images/cursor_pointer.png), pointer;
+	
+}
+.img_top{
+    display: block;
+    width: 300px;
+	height:300px;
+	cursor:url(images/cursor_pointer.png), pointer;
+    margin: auto;
+}
+
