@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Решение квадратного уравнения</title>
+   </head>
+ 
+   <body class="body">
+	   <div class="content"> 
+			<h2>Решение квадратного уравнения</h2>
+			<hr align="left" color="#800080" size=2 width=50%>
+			<h1>ax<sup>2</sup> + bx + c = 0</h1>
+		
+			<h3>Решение квадратного уравнения на языке <e>Pascal</e></h3>
+		
+			<abbr title="Паска́ль — один из наиболее известных языков программирования, используется для обучения программированию в старших классах и на первых курсах вузов, является основой для ряда других языков."class="lang">
+			Pascal
+			</abbr>
+
+			<pre><code>
+var
+	a,b,c,d,x1,x2: real;
+begin
+	write('a='); readln(a);
+	write('b='); readln(b);
+	write('c='); readln(c);
+	d := b*b - 4*a*c;
+	if d > 0 then begin
+		x1 := (-b + sqrt(d)) / (2*a);
+		x2 := (-b - sqrt(d)) / (2*a);
+		writeln('x1=',x1:3:2,'; x2=',x2:3:2);
+	end
+	else
+		if d = 0 then begin
+			x1 := (-b) / (2*a);
+			writeln('x=',x1:5:2);
+		end
+		else
+			writeln('Корней нет');
+end.
+			</code></pre>
+			<hr align="center" color="#800080" size=2 width=100%>
+			<h3>Решение квадратного уравнения на языке C++</h3>
+		
+			<abbr title="C++ — компилируемый, статически типизированный язык программирования общего назначения. Поддерживает такие парадигмы программирования, как процедурное программирование, объектно-ориентированное программирование, обобщённое программирование. "class="lang"">
+				C++
+			</abbr>
+		
+			<pre><code>
+#include <cmath> // подключаем sqrt
+
+using namespace std;
+ 
+int main()
+{
+  double a,b,c,d,x1,x2; // Объявляем переменные с плавающей точкой.
+ 
+  cout << "Введите a\n"; // Вводим исходные данные
+  cin >> a;
+  cout << "Введите b\n";
+  cin >> b;
+  cout << "Введите c\n";
+  cin >> c;
+ 
+  d = b * b - 4 * a * c; // Рассчитываем дискриминант
+  if (d > 0) // Условие при дискриминанте больше нуля
+  {
+	x1 = ((-b) + sqrt(d)) / (2 * a);
+	x2 = ((-b) - sqrt(d)) / (2 * a);
+	cout << "x1 = " << x1 << "\n";
+	cout << "x2 = " << x2 << "\n";
+  }
+  if (d == 0) // Условие для дискриминанта равного нулю
+  {
+	x1 = -(b / (2 * a));
+	cout << "x1 = x2 = " << x1 << "\n";
+  }
+  if (d < 0) // Условие при дискриминанте меньше нуля
+	cout << "D < 0, Действительных корней уравнения не существует";
+}
+			</code></pre>
+			<hr align="center" color="#800080" size=2 width=100%>
+			<h3>Пример решения квадратных уравнений</h3>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/a3IVdU_gung" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	   </div>
+	   <style type="text/css">
+			.body {
+			background: #DDA0DD;
+			}
+			.content { 
+			background: #ffffff;
+			width: 70%; 
+			margin: auto;
+			margin-top: 30px;
+			padding: 50px; 
+			box-shadow: 0 0 10px black;
+			}
+			.lang {
+				font-size: 35px;
+				color: #32CD32;
+				float: right;
+			}
+		</style> 
+      
+   </body>
+ 
+</html>
