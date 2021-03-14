@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+        <title>Лабораторная №4</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="style/style.css" rel="stylesheet">
+    </head>
+    <body>
+		<div class="menu">
+			<div id="d1" class="first">
+				<a href="#i1"><h3>Псевдоэлементы</h3></a>
+			</div>
+			<div id="d2" class="first"> <!-- Попробуйте объяснить почему прямоугольник №2 не поменял свой цвет, хотя он относится к классу first. Ответ:Приоритет идентификатора выше.-->
+				<a href="#i2""><h3>Псевдоклассы</h3></a>
+			</div>
+			
+			<div id="d3" class="second">
+				<a href="#i3""><h3>Примеры</h3></a>
+			</div>
+			<div id="d4" class="first">
+				
+			</div>
+			<div id="d5" class="second">
+			   
+			</div>
+			<div id="d6" class="second">
+			   
+			</div>
+		</div>
+		<a name="top"></a>
+		<div class="cont">
+			<a name="i1"><h1>Псевдоэлементы</h1></a>
+			<span>Псевдоэлемент в CSS</span> — это ключевое слово, добавляемое к селектору, которое позволяет стилизовать определённую часть выбранного элемента. Например, псевдоэлемент <a href="https://developer.mozilla.org/ru/docs/Web/CSS/::first-line">::first-line</a> может быть использован для изменения шрифта первой строки абзаца.
+			
+			<div class="brush">
+				<code>
+					<div class="token comment">/* Стили для первой строки элемента &lt;p&gt; */</div>
+					<div>
+						<span class="token selector">p::first-line</span>
+						<span class="token punctuation">{</span>
+					</div>
+					<div>
+						<span class="token property">color</span>
+						<span class="token punctuation">:</span> red
+						<span class="token punctuation">;</span>
+					</div>
+					<div class="token punctuation">}</div>
+				</code>
+			</div>
+			<span>Примечание:</span> В отличие от псевдоэлементов, псевдоклассы могут быть использованы для стилизации элемента на основе его состояния.
+			<h2>Список стандартных псевдоэлементов</h2>
+			<ul>
+				<li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS/::after"/>::after </a>- создаёт псевдоэлемент, который является последним потомком выбранного элемента.</li>
+				<li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS/::before">::before </a>создаёт псевдоэлемент,который является первым потомком выбранного элемента.</li>
+				<li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS/::cue">::cue </a>Он может быть использован для задания стилей титров и других реплик в медиа с VTT треками.</li>
+				<li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS/::first-letter">::first-letter </a>применяет стили к первой букве первой строки блочного элемента, но только если нету другого предшествующего содержимого (такого как изображения или инлайн таблицы).</li>
+				<li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS/::first-line">::first-line </a>применяет стили к первой строке блочного элемента. Обратите внимание, что длина первой строки зависит от многих факторов, включая ширину элемента, ширину документа и размер шрифта текста.</li>
+				<li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS/::selection">::selection </a>позволяет применить стили к части документа, который был выделен пользователем (например, с помощью мыши).</li>
+				<li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS/::slotted">::slotted </a>представляет собой любой элемент, помещенный в слот внутри HTML-шаблона (дополнительная информация в Using templates and slots).</li>
+				<li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS/::backdrop">::backdrop </a>это прямоугольник с размерами окна, который отрисовывается сразу же после отрисовки любого элемента в полноэкранном режиме. </li>
+				<li><a  target="_blank"href="https://developer.mozilla.org/ru/docs/Web/CSS/::placeholder">::placeholder </a>представляет собой текст placeholder в &lt input &gt или &lt textarea &gt элементах.</li>
+				<li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS/::marker">::marker </a>применяет стили к маркеру элемента списка, которые обычно содержит значок или номер.</li>
+				<li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/::spelling-error">::spelling-error (en-US) </a>представляет собой текстовый сегмент, который пользователь помечает как неправильно написанный.</li>
+				<li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS/::grammar-error">::grammar-error </a>представляет сегмент текста, который пользовтель пометил как грамматически неверный.</li>		
+			</ul>
+			
+			<a name="i2"><h1>Псевдоклассы</h1></a>
+			<span>Псевдокласс в CSS</span> — это ключевое слово, добавленное к селектору, которое определяет его особое состояние. Например, :hover может быть использован для изменения цвета кнопки при наведении курсора на неё.
+			<div class="brush">
+				<code>
+					<div>
+						<span class="token selector">div:hover</span>
+						<span class="token punctuation">{</span>
+					</div>
+					<div>
+						<span class="token property">background-color</span>
+						<span class="token punctuation">:</span> #F89B4D
+						<span class="token punctuation">;</span>
+					</div>
+					<div class="token punctuation">}</div>
+				</code>
+			</div>
+			<h2>Список стандартных псевдоклассов</h2>
+			<ul>
+				<li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS/:active">:active </a></li>		
+				<li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS/:any">:any </a></li>
+				<li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS/:any-link">:any-link </a></li>
+				<li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS/:checked">:checked </a></li>
+				<li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS/:default">:default </a></li>
+				<li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS/:dir">:dir() </a></li>
+				<li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS/:disabled">:disabled </a></li>
+				<li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS/:empty">:empty </a></li>
+				<li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS/:enabled">:enabled </a></li>
+				<li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS/:first">:first </a></li>
+				<li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS/:first-child">:first-child </a></li>
+				<li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS/:first-of-type">:first-of-type </a></li>
+				<li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS/:fullscreen">:fullscreen </a></li>
+				<li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS/:focus">:focus </a></li>
+				<li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS/:hover">:hover </a></li>
+				<li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS/:indeterminate">:indeterminate </a></li>
+				<li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS/:in-range">:in-range </a></li>
+				<li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS/:invalid">:invalid </a></li>
+				<li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS/:lang">:lang() </a></li>
+				<li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS/:last-child">:last-child </a></li>
+				<li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS/:last-of-type">:last-of-type </a></li>
+				<li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS/:left">:left </a></li>
+				<li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS/:link">:link </a></li>
+				<li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS/:not">:not() </a></li>
+				<li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS/:nth-child">:nth-child() </a></li>
+				<li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS/:nth-last-child")">:nth-last-child() </a></li>
+				<li><a href="https://developer.mozilla.org/ru/docs/Web/CSS/:nth-last-of-type">:nth-last-of-type() </a></li>
+				<li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS/:nth-of-type">:nth-of-type() </a></li>
+				<li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS/:only-child">:only-child </a></li>
+				<li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS/:only-of-type">:only-of-type </a></li>
+				<li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS/:optional">:optional </a></li>
+				<li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS/:out-of-range">:out-of-range </a></li>
+				<li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS/:read-only">:read-only </a></li>
+				<li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS/:read-write">:read-write </a></li>
+				<li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS/:required">:required </a></li>
+				<li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS/:right">:right </a></li>
+				<li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS/:root">:root </a></li>
+				<li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/:scope">:scope (en-US) </a></li>
+				<li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS/:target">:target </a></li>
+				<li><a  target="_blank"href="https://developer.mozilla.org/ru/docs/Web/CSS/:valid">:valid </a></li>
+				<li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS/:visited">:visited </a></li>
+			</ul>
+			
+			<a name="i3"><h1>Примеры</h1></a>
+			<h2>Рассмотрим псевдоэлементы ::after и ::before</h2>
+			<p class="p1"> ← сердце тут, а последнее слово здесь </p>
+			<h2>Рассмотрим псевдокласс :hover</h2>
+			<a href="#top"><div class="p2">↑</div></a>
+		</div>
+    </body>
+</html>     
