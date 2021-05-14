@@ -1,0 +1,39 @@
+body {
+   background-image: url(../images/bg.jpg);
+   display: flex;
+   margin:50px;
+   font-size:20px;
+   justify-content: center;
+}
+.media-object {
+	background-image: url(../images/pic.jpg);
+	background-size:cover;
+	border-radius:15px;
+	width: 150px;
+	height: 150px;
+	order: 1;
+	margin-left:20px;
+	justify-content:flex-start;
+	align-items:flex-start;
+	align-content:flex-start; 
+	box-shadow: 0 0 10px #788aca;
+}
+.media-object1 {
+	background-image: url(../images/pic2.jpg);
+}
+.media {
+   display: flex;
+   align-items: center;
+   background: #fff9f6;
+   padding: 1em;
+   border-radius: 3px;
+   max-width: 30em;
+   box-shadow: 0 0 10px #788aca;
+   align-items: stretch;
+}
+.media-body {
+   flex: 1 
+}
+.media-heading {
+  margin:0 5em 0 0;
+}

@@ -1,0 +1,59 @@
+body {
+	background:#666;
+	margin:0;
+    padding:15px;
+	font-family: 'Fjalla One', sans-serif;
+}
+a{
+  text-decoration:none;
+  color:#fff;
+  margin:10px;
+  font-weight: bold;
+}
+.img {
+	width:55px;
+	height:45px;
+	display: flex;
+	justify-content:center;
+}
+h1 {
+	display: flex;
+	justify-content:center;
+}
+.row{
+    display: flex;
+    background-color: #777;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+	font-size:30px;
+}
+.row_cell {
+   padding: 10px;
+   flex: 1;
+   background-color: #aaa;
+   margin: 15px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+.row_cell1 {
+	align-items:stretch;
+}
+.row_cell--2 {
+   flex: 2;
+}
+.row_cell--center{
+    align-self: flex-center;
+}
+.row_cell--bottom {
+   align-items: flex-end;
+}
+.row_cell--top {
+  align-self: flex-start;
+}
+
+
+
+
